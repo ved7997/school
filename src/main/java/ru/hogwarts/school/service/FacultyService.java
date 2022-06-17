@@ -2,15 +2,13 @@ package ru.hogwarts.school.service;
 
 import org.springframework.stereotype.Service;
 import ru.hogwarts.school.model.Faculty;
-import ru.hogwarts.school.model.Student;
-import ru.hogwarts.school.repositorys.repositoryFaculty;
+import ru.hogwarts.school.repositorys.RepositoryFaculty;
 
-import java.util.HashMap;
 @Service
 public class FacultyService {
-    private repositoryFaculty repositoryFaculty;
+    private final RepositoryFaculty repositoryFaculty;
 
-    public FacultyService(repositoryFaculty repositoryFaculty) {
+    public FacultyService(RepositoryFaculty repositoryFaculty) {
         this.repositoryFaculty = repositoryFaculty;
     }
 
